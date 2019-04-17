@@ -1,5 +1,25 @@
 # Coursera Downloader
 
+## My Ubuntu 16.04 Installation
+
+To access the right path and use virtualenv without anaconda
+
+`sudo su` or another user
+virtualenv my-coursera
+cd my-coursera
+source my-coursera/bin/activate
+git clone https://github.com/coursera-dl/coursera-dl     // or use my fork
+cd coursera-dl
+pip install -r requirements.txt
+use chrome extension `Export cookies.txt` to generate `cookies.txt` that contains session info.
+cookies.txt need to be present same level as `./coursera-dl` 
+./coursera-dl --username="[USERNAME]" -password="[PASSWORD]" [COURSENAME_URL_ARGUMENT]
+chmod 777 COURSEFOLDER
+
+
+Main Modifications are found in ubuntu /coursera/coursera_dl.py
+
+
 [![Build Status](https://travis-ci.org/coursera-dl/coursera-dl.svg?branch=master)](https://travis-ci.org/coursera-dl/coursera-dl)
 [![Build status](https://ci.appveyor.com/api/projects/status/3hru0ycv5fbny5k8/branch/master?svg=true)](https://ci.appveyor.com/project/balta2ar/coursera-dl/branch/master)
 [![Coverage Status](https://coveralls.io/repos/coursera-dl/coursera-dl/badge.svg)](https://coveralls.io/r/coursera-dl/coursera-dl)
