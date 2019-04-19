@@ -4,19 +4,19 @@
 
 To access the right path and use virtualenv without anaconda
 
-`sudo su` or another user
+`sudo su`
 
-virtualenv my-coursera
+`virtualenv my-coursera`
 
-cd my-coursera
+`cd my-coursera`
 
-source my-coursera/bin/activate
+`source my-coursera/bin/activate`
 
-git clone https://github.com/coursera-dl/coursera-dl     // or use my fork
+`git clone https://github.com/coursera-dl/coursera-dl`     // or use my fork
 
-cd coursera-dl
+`cd coursera-dl`
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 use chrome extension `Export cookies.txt` to generate `cookies.txt` that contains session info.
 
@@ -24,7 +24,7 @@ cookies.txt need to be present same level as `./coursera-dl`
 
 ./coursera-dl --username="[USERNAME]" -password="[PASSWORD]" [COURSENAME_URL_ARGUMENT]
 
-chmod 777 COURSEFOLDER
+`chmod 777 COURSEFOLDER`
 
 
 Main Modifications are found in ubuntu /coursera/coursera_dl.py
